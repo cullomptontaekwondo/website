@@ -7,4 +7,6 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://cullomptontaekwondo.github.io',
   base: '/website',
+  output: 'static',
+  outDir: './docs',
 });
