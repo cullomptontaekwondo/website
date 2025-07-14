@@ -1,0 +1,67 @@
+---
+import { Media, Video } from 'accessible-astro-components';
+
+interface Props {
+  title: string;
+  description?: string;
+  media?: {
+    src: string;
+    alt: string;
+    class?: string;
+  };
+}
+//todo how do we make the hero full screen until scrolling
+
+const { title = '', description = '', media = null } = Astro.props;
+---
+
+<section class="hero mt-12 mb-48 relative">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="hero-title text-center text-6xl md:text-left lg:text-8xl">
+          <slot>{title}</slot>
+        </h1>
+        <h4 class="text-center text-2xl md:text-left lg:text-3xl">
+          {description}
+        </h4>
+      </div>
+      {media && <Media {...media} />}
+    </div>
+  </div>
+
+  <div
+    class="absolute left-1/2 -translate-x-1/2 bottom-0 flex justify-center w-full pb-4"
+  >
+    <svg
+      width="150"
+      height="150"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="var(--primary-100)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="chevron-down"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</section>
+<style lang="scss">
+  .hero-title {
+    color: var(--primary-100);
+  }
+  .chevron-down {
+    margin: auto;
+    width: 5em;
+    height: 5em;
+    animation: hover-me 1s infinite ease-in-out alternate;
+  }
+
+  @keyframes hover-me {
+    100% {
+      transform: translate3d(0, 25px, 0);
+    }
+  }
+</style>

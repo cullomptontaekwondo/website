@@ -1,0 +1,26 @@
+// | -------------------------------------------------------------
+// | Globals
+// | -------------------------------------------------------------
+
+@use 'base/reset';
+@use 'base/root';
+@use 'base/font';
+@use 'base/list';
+@use 'base/container';
+@use 'base/breakpoint';
+@use 'base/button';
+@use 'base/color';
+@use 'base/outline';
+@use 'base/space-content';
+@use 'base/utils';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+  padding: 1rem;
+  line-height: 1.5;
+}

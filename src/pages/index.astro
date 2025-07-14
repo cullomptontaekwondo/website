@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import ContentMedia from '../components/ContentMedia.astro';
+import Hero from '../components/Hero.astro';
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import TKDBanner from '../assets/img/TKD Banner.png';
+---
+
+<DefaultLayout title="Home">
+  <Hero
+    title="Cullompton Tae Kwon-Do"
+    ,
+    description="Focus - Discipline - Confidence - Self Control - Leadership"
+    media={{
+      src: '/logo.png',
+      alt: 'TAGB Cullompton Logo',
+      class: 'hidden lg:block',
+    }}
+  />
+
+  <div class="container mx-auto px-4 flex flex-col items-center text-center">
+    <h2>Welcome to Cullompton Tae Kwon-Do</h2>
+    <Image src={TKDBanner} alt="Cullompton Tae Kwon-Do Logo" />
+
+    <ContentMedia imgSrc="/shane.png" , reverseImg={false}>
+      <p>
+        Tae - To Jump, Kick or Smash with the Foot Kwon - To Punch or Destroy
+        with the Hand Do - Art, Way or Method
+      </p>
+      <p>
+        Join us to learn self-defense, improve your fitness, and develop
+        discipline and confidence through the art of Tae Kwon-Do.
+      </p>
+    </ContentMedia>
+  </div>
+</DefaultLayout>

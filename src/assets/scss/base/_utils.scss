@@ -1,0 +1,12 @@
+/* Show/hide utils based on dark mode */
+.light-only {
+  display: none !important;
+}
+
+.darkmode .light-only {
+  display: block !important;
+}
+
+.darkmode .dark-only {
+  display: none !important;
+}

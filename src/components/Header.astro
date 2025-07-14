@@ -1,0 +1,54 @@
+---
+import Navigation from '../components/Navigation.astro';
+import { SkipLink } from 'accessible-astro-components';
+---
+
+<header>
+  <SkipLink />
+  <Navigation>
+    <li class="menu-item">
+      <a href="/">Home</a>
+    </li>
+    <li class="menu-item">
+      <a href="/about-us/">About Us</a>
+    </li>
+    <li class="menu-item">
+      <a href="/about-tkd/">About TKD</a>
+    </li>
+    <li class="menu-item">
+      <a href="/calendar/">Calendar</a>
+    </li>
+    <li class="menu-item">
+      <a href="/kit/">Kit</a>
+    </li>
+    <li class="menu-item">
+      <a href="/contact/">Contact</a>
+    </li>
+  </Navigation>
+</header>
+
+<style lang="scss" is:global>
+  @use '../assets/scss/base/outline' as *;
+
+  header {
+    .type-icon a {
+      display: block;
+
+      [data-icon] {
+        margin-top: -4px;
+        width: 30px;
+        height: auto;
+
+        path {
+          fill: var(--action-color);
+        }
+      }
+
+      &:hover {
+        [data-icon] path {
+          fill: var(--action-color-state);
+        }
+      }
+    }
+  }
+</style>

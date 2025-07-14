@@ -1,0 +1,39 @@
+---
+import { Media } from 'accessible-astro-components';
+
+const { imgSrc, reverseImg = false, subtext = '', ...mediaProps } = Astro.props;
+---
+
+<section class="">
+  <div class="container">
+    <div class="grid grid-cols-1 gap-24 md:grid-cols-2">
+      {
+        !reverseImg ? (
+          <div class="flex flex-col items-center">
+            <Media class="rounded-lg" src={imgSrc} {...mediaProps} />
+            {subtext && (
+              <span class="mt-2 text-xs italic text-gray-500">{subtext}</span>
+            )}
+          </div>
+        ) : (
+          ''
+        )
+      }
+      <div class="space-content flex flex-col justify-center">
+        <slot />
+      </div>
+      {
+        reverseImg ? (
+          <div class="flex flex-col items-center">
+            <Media class="rounded-lg" src={imgSrc} {...mediaProps} />
+            {subtext && (
+              <span class="mt-2 text-xs italic text-gray-500">{subtext}</span>
+            )}
+          </div>
+        ) : (
+          ''
+        )
+      }
+    </div>
+  </div>
+</section>

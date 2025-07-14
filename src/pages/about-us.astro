@@ -1,0 +1,158 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+
+import { Image } from 'astro:assets';
+import ContentMedia from '../components/ContentMedia.astro';
+---
+
+<DefaultLayout title="About Us">
+  <div class="container mx-auto px-4 space-y-12">
+    <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
+      <ContentMedia imgSrc="/logo.png" reverseImg={true}>
+        <h3>About Cullompton TaeKwon-Do</h3>
+        <h4>Since 18 June 1987</h4>
+        <p>
+          Cullompton TaeKwon-Do has been running for over 30 years. Initially it
+          was under the instruction of Mr Paul Smith, a 3rd degree black belt of
+          the TAGB, and my first instructor. Paul returned back to his 'home' in
+          the north of England in 1998 to be with his family, and Mr Daren
+          Sainsbury (3rd degree at the time) took over. Daren gained his 4th
+          degree soon after, and due to other teaching commitments in 1999, left
+          the school in the capable hands of Mr Chris Clarke (2nd degree at the
+          time). In 2001 Chris decided to join PUMA (Professional Unification of
+          Martial Arts) which was formed on 1st September 2000. Most of his
+          students joined PUMA alongside Chris, and some stayed with the TAGB.
+        </p>
+        <p>
+          Over the next 17 years, with the aid of assisstant instructor Adam
+          Appleby, Chris taught over 200 students with 49 of them achieving a
+          black belt (Including 2nd, 3rd, and 4th Degree). Chris Clarke retired
+          as a 4th degree, from TaeKwon-Do at the end of Sept 2017. And on 1st
+          October Adam, also a 4th degree, took over as instructor.
+        </p>
+      </ContentMedia>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1500" class="space-y-4 mt-4">
+      <ContentMedia
+        imgSrc="/Adam and Chris 2001.jpg"
+        reverseImg={false}
+        ,
+        subtext="Chris Clarke and Adam Appleby in 2001"
+      >
+        <p>
+          Adam Appleby started training in March 1996. He graded for 1st degree
+          black belt in 1999 with the TAGB in front of a panel of 6th degree
+          black belts, headed by Master Michael Dew (Now 8th degree). In 2002 he
+          graded with PUMA, again in front of a panel 6th degree black belts
+          headed by Master Ray Gayle (Now also 8th degree). He graded for 3rd
+          degree in October 2004 and 4th degree in October 2009 under the
+          careful scrutiny of Senior Master Ray Gayle, senior Master Jonny Black
+          (8th degree), Master Mark Ogborne (7th degree), and Mr Rob Tettmar
+          (6th degree). Adam has also trained under Grandmaster Choi Jung Hwa
+          (9th degree and the son of the founder of TaeKwon-Do General Choi Hong
+          Hi), Grandmaster Kwan Jang Nim Cariati (9th degree and ICTF
+          president), Grandmaster Ray O'Neill (9th degree), and First
+          Grandmaster Rhee Ki Ha (9th degree and the first grandmaster promoted
+          by the the founder, General Choi).
+        </p>
+        <p>
+          In November 2023 after being diagnosed with a health issue, Adam
+          reluctantly stopped teaching but a Knight in shining armour, (Shane
+          Knight of the TAGB), stepped in to enable Adam's students to continue
+          their Taekwon-Do journey. I'm sure they will go from strength to
+          strength.
+        </p>
+      </ContentMedia>
+    </div>
+
+    <hr />
+    <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
+      <ContentMedia
+        imgSrc="/tagb_sw.png"
+        reverseImg={true}
+        ,
+        style="max-width: 300px; "
+      >
+        <h3>The Tae Kwon-Do Association of Great Britain (TAGB)</h3>
+        <p>
+          The Tae Kwon-Do Association of Great Britain (TAGB) is a nationally
+          recognised Tae Kwon-Do organisation. It was formed in 1983 and has
+          since become the founding member of the British Tae Kwon-Do Council
+          (BTC) which is recognised by the United Kingdom Sports Council.
+          <br /><br />
+          TAGB instructors are highly qualified, accredited individuals with many
+          years' experience in teaching mixed classes which often include young children
+          and disability groups.
+          <br /><br />
+          Training in Tae Kwon-Do can start at any age. TAGB members start as young
+          as five and recently one of our members gained his fifth dan black belt
+          on his 70th birthday!
+        </p>
+      </ContentMedia>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1500" class="space-y-4 mt-4">
+      <ContentMedia
+        imgSrc="/TKD Banner3.png"
+        ,
+        reverseImg={false}
+        style="max-width: 600px; "
+      >
+        <p>
+          Because of its high-kicking, fast-paced style Tae Kwon Do is a
+          thoroughly modern way of getting fit. The TAGB is a great advocate of
+          fun and fitness at an early age and TAGB instructors often work with
+          local schools to teach self-defence.
+        </p>
+        <p>
+          As the largest martial arts organisation in the world the TAGB has
+          over 25,000 accredited members, 600 schools, and organises seminars
+          with World Masters, demonstrations, and national, regional and
+          international championships every month of the year.
+        </p>
+        <p>
+          The TAGB is not just concerned with its own development, this is why
+          it has played a leading role in the reunification of British Tae
+          Kwon-Do into one body. In 1988, the TAGB helped found the British Tae
+          Kwon-Do Council (BTC), this being the only governing body of Tae
+          Kwon-Do to be recognised by the Sports Council.
+        </p>
+      </ContentMedia>
+    </div>
+    <hr />
+    <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
+      <ContentMedia imgSrc="/tagb-international.png" reverseImg={false}>
+        <h3>Tae Kwon-Do International</h3>
+        <p>
+          The TAGB also helped found Tae Kwon-Do International, the object of
+          which is to bring together Tae Kwon-Do practioners throughout the
+          World. Tae Kwon-Do International is non-political and it doesn't
+          attempt to dictate to member countries how they must run their
+          affairs.
+        </p>
+        <p>
+          Since its foundation in 1993, Tae Kwon-Do International has grown to
+          become one of the biggest World Tae Kwon-Do bodies. Its World
+          Championships are amongst the largest and best organised and it draws
+          its participation from every contingent.
+        </p>
+        <p>
+          Tae Kwon Do training is about learning to discipline your mind as well
+          as your body and TAGB instructors always include elements in their
+          teaching which help their students to develop mentally as well as
+          physically.
+        </p>
+        <p>
+          With schools throughout the country the TAGB is the ideal organisation
+          for learning a martial art that has evolved through a 3,000 year
+          history to become the newest Olympic Sport.
+        </p>
+      </ContentMedia>
+    </div>
+  </div>
+</DefaultLayout>
+<style lang="scss">
+  h3,
+  h4 {
+    color: var(--primary-100);
+  }
+</style>
