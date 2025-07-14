@@ -6,5 +6,5 @@ import tailwind from '@astrojs/tailwind';
 export default {
   integrations: [tailwind()],
   site: 'https://cullomptontaekwondo.github.io',
-  base: 'website',
+  base: '/website/',
 };
