@@ -3,12 +3,33 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
 ---
 
 <DefaultLayout title="Contact Us">
-  <div class="container">
-    <h2 class="m-4">Kit</h2>
-    <hr />
-    <p class="m-4">
-      Contact Us Telephone 07871 520 903 Address Culm Valley Sports Centre
-      Cullompton EX15 1LL Mail ShaneKnight1@Hotmail.com
-    </p>
+  <div class="container mx-auto max-w-lg p-8 rounded-lg shadow-md mt-8">
+    <h2
+      class="text-3xl font-bold text-center mb-4"
+      style="color: var(--primary-100);"
+    >
+      Contact Us
+    </h2>
+    <hr class="mb-6" style="color: var(--primary-100)" />
+    <div class="space-y-4 text-gray-700">
+      <div class="flex items-center">
+        <span class="font-semibold w-28">Phone:</span>
+        <a
+          href="tel:07871520903"
+          class="hover:underline ml-2"
+          style="color: var(--primary-100)   ">07871 520 903</a
+        >
+      </div>
+      <div class="flex items-center">
+        <span class="font-semibold w-28">Address:</span>
+        <span class="ml-2">Culm Valley Sports Centre, Cullompton EX15 1LL</span>
+      </div>
+      <div class="flex items-center">
+        <span class="font-semibold w-28">Email:</span>
+        <span class="ml-2" style="color: var(--primary-100)"
+          >ShaneKnight1@Hotmail.com
+        </span>
+      </div>
+    </div>
   </div>
 </DefaultLayout>

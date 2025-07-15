@@ -10,15 +10,35 @@ import TKDBanner from '../assets/img/TKD Banner.png';
   <Hero
     title="Cullompton Tae Kwon-Do"
     ,
-    description="Focus - Discipline - Confidence - Self Control - Leadership"
+    description="Focus - Discipline - Confidence - Self Control - Leadership - Family Friendly"
     media={{
       src: `${import.meta.env.BASE_URL}/logo.png`,
       alt: 'TAGB Cullompton Logo',
       class: 'hidden lg:block',
     }}
   />
-
-  <div class="container mx-auto px-4 flex flex-col items-center text-center">
+  <div
+    class="absolute left-1/2 -translate-x-1/2 bottom-0 flex justify-center w-full pb-4 hidden lg:block"
+  >
+    <svg
+      width="150"
+      height="150"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="var(--primary-100)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="chevron-down"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+  <div
+    class="container mx-auto px-4 flex flex-col items-center text-center"
+    data-aos="fade-left"
+    data-aos-duration="1500"
+  >
     <h3 class="redheading">Welcome to Cullompton Tae Kwon-Do</h3>
 
     <ContentMedia
@@ -26,47 +46,52 @@ import TKDBanner from '../assets/img/TKD Banner.png';
       ,
       reverseImg={false}
     >
-      <h4>
-        My name is Shane Knight and I am the senior instructor at the club
-      </h4>
-      <p>
-        Cullompton Tae Kwon-do was first started in 1987 by Mr Paul Smith (3rd
-        dan), I joined the club in 1997 and Mr Daren Sainsbury (5th dan) took
-        over in 1998.
-      </p><p>
-        Under his guidance I passed my 1st dan grading in 2001 and took over as
-        the instructor of the club. I was first introduced to Tae kwon-do in the
-        late 80's but it wasn't until 1997 when I moved to Cullompton and joined
-        the Cullompton club that I took it more seriously. <p>
-          It took 4 years to get my 1st dan and I had some good achievements
-          while going up through the gradings, including attending many
-          competitions and winning some medals, but more often coming away with
-          the knowledge that there is more to learn! I achieved my 2nd dan in
-          2004 and my 3rd dan in 2011, I then went on to making the grade of 4th
-          degree black belt (recognised International Instructor) in 2015.
-        </p><p>
-          I have taught many students over the past 15+ years and I would rank
-          many of my achievements down to them; watching them pass gradings,
-          getting grading awards and going up through the ranks themselves. I
-          have felt very privileged to be able to coach on the side lines of
-          competitions and watch my students go on to win medals and to know
-          there is also still more for them to learn! But I would say the thing
-          I am most proud of is how friendly and helpful all the students at the
-          Cullompton club have been over the years who have come to learn Tae
-          Kwon-do with us.
+      <div class="text-lg py-4 px-2">
+        <p class="mb-3">
+          Cullompton Tae Kwon Do is a friendly martial arts club training twice
+          a week at Culm Valley Sports Centre.
         </p>
-        <p>
+        <p class="mb-3">Why not come along and give it a try!</p>
+        <p class="mb-3">Training Times Mondays & Wednesdays 7-8pm age</p>
+        <p class="mb-3">7 years and over</p>
+        <p class="mb-3">
           Join us to learn self-defense, improve your fitness, and develop
           discipline and confidence through the art of Tae Kwon-Do.
         </p>
-      </p>
+        <p class="mb-3">
+          <a href={`${import.meta.env.BASE_URL}/contact/`}> Contact us here</a>
+        </p>
+        <p class="mb-3">
+          <a href={`${import.meta.env.BASE_URL}/about-us/`}>
+            Learn more about us</a
+          >
+        </p>
+      </div>
     </ContentMedia>
-    <Image src={TKDBanner} alt="Cullompton Tae Kwon-Do Logo" />
-  </div>
-</DefaultLayout>
 
-<style lang="scss">
-  .redheading {
-    color: var(--primary-100);
-  }
-</style>
+    <div
+      class="container mx-auto px-4 flex flex-col items-center text-center"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
+      <Image src={TKDBanner} alt="Cullompton Tae Kwon-Do Logo" />
+    </div>
+  </div>
+  <style lang="scss">
+    .redheading {
+      color: var(--primary-100);
+    }
+    .chevron-down {
+      margin: auto;
+      width: 5em;
+      height: 5em;
+      animation: hover-me 1s infinite ease-in-out alternate;
+    }
+
+    @keyframes hover-me {
+      100% {
+        transform: translate3d(0, 25px, 0);
+      }
+    }
+  </style>
+</DefaultLayout>
