@@ -8,5 +8,4 @@ export default defineConfig({
   site: 'https://cullomptontaekwondo.github.io',
   base: '/website',
   output: 'static',
-  outDir: './docs',
 });
