@@ -9,7 +9,7 @@ import ContentMedia from '../components/ContentMedia.astro';
   <div class="container mx-auto px-4 space-y-12">
     <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/Chon-ji - baektu.gif"
+        imgSrc={`${import.meta.env.BASE_URL}/Chon-ji - baektu.gif`}
         reverseImg={true}
         ,
         subtext="The crater lake Chon-Ji on the top of Mount Baektu."
