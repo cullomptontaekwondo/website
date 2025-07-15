@@ -8,7 +8,10 @@ import ContentMedia from '../components/ContentMedia.astro';
 <DefaultLayout title="About Us">
   <div class="container mx-auto px-4 space-y-12">
     <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
-      <ContentMedia imgSrc="/logo.png" reverseImg={true}>
+      <ContentMedia
+        imgSrc={`${import.meta.env.BASE_URL}/logo.png`}
+        reverseImg={true}
+      >
         <h3>About Cullompton TaeKwon-Do</h3>
         <h4>Since 18 June 1987</h4>
         <p>
@@ -34,7 +37,7 @@ import ContentMedia from '../components/ContentMedia.astro';
     </div>
     <div data-aos="fade-left" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/Adam and Chris 2001.jpg"
+        imgSrc={`${import.meta.env.BASE_URL}/Adam and Chris 2001.jpg`}
         reverseImg={false}
         ,
         subtext="Chris Clarke and Adam Appleby in 2001"
@@ -68,7 +71,7 @@ import ContentMedia from '../components/ContentMedia.astro';
     <hr />
     <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/tagb_sw.png"
+        imgSrc={`${import.meta.env.BASE_URL}/tagb_sw.png`}
         reverseImg={true}
         ,
         style="max-width: 300px; "
@@ -92,7 +95,7 @@ import ContentMedia from '../components/ContentMedia.astro';
     </div>
     <div data-aos="fade-left" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/TKD Banner3.png"
+        imgSrc={`${import.meta.env.BASE_URL}/TKD Banner3.png`}
         ,
         reverseImg={false}
         style="max-width: 600px; "
@@ -120,7 +123,10 @@ import ContentMedia from '../components/ContentMedia.astro';
     </div>
     <hr />
     <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
-      <ContentMedia imgSrc="/tagb-international.png" reverseImg={false}>
+      <ContentMedia
+        imgSrc={`${import.meta.env.BASE_URL}/tagb-international.png`}
+        reverseImg={false}
+      >
         <h3>Tae Kwon-Do International</h3>
         <p>
           The TAGB also helped found Tae Kwon-Do International, the object of

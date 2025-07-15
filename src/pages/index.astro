@@ -22,7 +22,11 @@ import TKDBanner from '../assets/img/TKD Banner.png';
     <h2>Welcome to Cullompton Tae Kwon-Do</h2>
     <Image src={TKDBanner} alt="Cullompton Tae Kwon-Do Logo" />
 
-    <ContentMedia imgSrc="/shane.png" , reverseImg={false}>
+    <ContentMedia
+      imgSrc={`${import.meta.env.BASE_URL}/shane.png`}
+      ,
+      reverseImg={false}
+    >
       <p>
         Tae - To Jump, Kick or Smash with the Foot Kwon - To Punch or Destroy
         with the Hand Do - Art, Way or Method

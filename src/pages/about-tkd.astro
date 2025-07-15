@@ -24,7 +24,8 @@ import ContentMedia from '../components/ContentMedia.astro';
     </div>
     <div data-aos="fade-left" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/Gen Choi.jpg"
+        imgSrc={`${import.meta.env.BASE_URL}/Gen Choi.jpg`}
+        ,
         reverseImg={false}
         ,
         style="max-width: 300px; "
@@ -133,7 +134,8 @@ import ContentMedia from '../components/ContentMedia.astro';
     <hr />
     <div data-aos="fade-right" data-aos-duration="1500" class="space-y-4 mt-4">
       <ContentMedia
-        imgSrc="/tagb_sw.png"
+        imgSrc={`${import.meta.env.BASE_URL}/tagb_sw.png`}
+        ,
         reverseImg={true}
         ,
         style="max-width: 300px; "
