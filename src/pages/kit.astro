@@ -6,15 +6,37 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   <div class="container">
     <h2 class="m-4">Kit</h2>
     <hr />
-    <p class="m-4">
-      This sheet below shows the kit that is available for purchase. If you
-      would like to purchase any of the items, please contact us directly. The
-      prices are indicative and may vary.
-    </p>
-    <iframe
-      width="100%"
-      height="900"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTzKADxXeECxfdeYpUP92rywR8490eplZIwjvBJ29Gb7XVoaS0TO_1FggKBVcsnIxVWtO0JFbNrEBL1/pubhtml?gid=0&single=true&widget=false&headers=false"
-    ></iframe>
+    <div class="flex flex-row">
+      <div class="w-1/2 m-4">
+        <h4 class="mb-4">Available Items</h4>
+        <p class="mb-4">
+          This sheet below shows the kit that is available for purchase. The
+          prices are indicative and may vary. If you would like to purchase any
+          of the items, please scroll down to submit a form.
+        </p>
+        <iframe
+          width="100%"
+          height="600"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQxhYME6oMGm3MNJ-uT4j_gcJb2FNWTA7jSwyN8ga4P25HP6eGjTXfye_vxoTnPTQKdKqdm7etIOGdw/pubhtml?gid=0&single=true&widget=true&headers=false"
+        ></iframe>
+      </div>
+      <div class="w-1/2 m-4">
+        <h4 class="mb-4">Requesting Items</h4>
+        <p class="mb-4">
+          Please use this form to request any items you would like to purchase.
+          Once submitted, we will contact you to confirm the order and arrange
+          payment. Using this form helps Cullompton TKD keep track of kit
+          requests in one place.
+        </p>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfmUoNAtfCjWwl7FMCB8iIn8jJX8uzq5c99FOgWFJenE9MtIw/viewform?embedded=true"
+          width="640"
+          height="1083"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0">Loading…</iframe
+        >
+      </div>
+    </div>
   </div>
 </DefaultLayout>
